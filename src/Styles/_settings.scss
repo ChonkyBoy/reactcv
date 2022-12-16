@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap');
+
+//Main fonts
+$font-roboto: 'Roboto Flex', sans-serif;
+$font-montserrat : 'Montserrat', sans-serif;
+
+//Main colors
+$color-black: #333;
+$color-white: #ddd;
+$color-gray: #5d554b;
+$color-darkBlue: #203961;
+$color-lightBlue: #a2cdb8;
+$color-orangeIsh: #e1755e;
+
+$border-radius: 20px;
+$shadow: 0 1px 3px #333;
+$min-height: 95vh;
+
+@mixin VerticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 1rem;
+  font-family: $font-montserrat;
+  color: $color-black;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+  cursor: pointer;
+}
+a:visited {
+  color: $color-black;
+}

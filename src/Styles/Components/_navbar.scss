@@ -1,0 +1,39 @@
+.textNavbar {
+  @include VerticalCenter;
+  margin: 1rem 0 1rem 0;
+}
+
+.itemNavbar {
+  @include VerticalCenter;
+  max-width: 100%;
+  padding-top: 1rem;
+}
+
+.title {
+  font-family: $font-montserrat;
+  font-size: 30px;
+}
+
+.navActive {
+  font-family: $font-montserrat;
+  margin: 0 3rem 0;
+}
+.navActive:hover {
+  transition: 0.3s ease-in-out;
+  color: $color-orangeIsh;
+}
+.navActive:after {
+  background-color: $color-orangeIsh;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all ease-in-out 0.5s;
+  position: relative;
+  width: 0;
+}
+.navActive:hover:after {
+  width: 100%;
+  left: 50%;
+}
